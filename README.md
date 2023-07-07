@@ -18,5 +18,5 @@ chmod +x process_and_upload.sh
   - Change `BASE_DIR` to where you put the takeout files
   - Change `DOCKER_DIR` to a directory with a native linux FS (exfat, btrfs, etc) NOT a network mount directory because that won't work. If not network mounted you can set `DOCKER_DIR` to the same value as `BASE_DIR`.
   - Change `API_KEY` to the key you found earlier
-5. Now simply run the script 
+5. Now simply run the script. Ideally you should do this through an app like `tmux` as this can take a long time and a disconnected session will mean you have to restart. Instructions for how to use `tmux` [here](https://www.linode.com/docs/guides/persistent-terminal-sessions-with-tmux/).
 ```./process_and_upload```
