@@ -1,4 +1,4 @@
-# unsafe-gphotos-immich-migration
+# simple-gphotos-immich-migration
 This is a hackey (yet simple) way to import gphotos into immich.
 
 ## Install Instructions
@@ -10,8 +10,7 @@ This is a hackey (yet simple) way to import gphotos into immich.
 1. Download takeout files and put them in a directory
 2. Get API key as described [here](https://immich.app/docs/features/bulk-upload#obtain-the-api-key)
 3. Download the script:
-```bash
-wget https://raw.githubusercontent.com/lukehmcc/simple-gphotos-immich-migration/b9d84662f0eddcb9b26c0ba634ba599361b67362/process_and_upload.sh
+```bashwget https://raw.githubusercontent.com/lukehmcc/simple-gphotos-immich-migration/master/process_and_upload.sh
 chmod +x process_and_upload.sh
 ```
 4. Edit the script to change 3 values:
