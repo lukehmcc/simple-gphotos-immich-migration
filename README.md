@@ -11,7 +11,7 @@ This is a hackey (yet simple) way to import gphotos into immich.
 2. Get API key as described [here](https://immich.app/docs/features/bulk-upload#obtain-the-api-key)
 3. Download the script and run it:
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/lukehmcc/simple-gphotos-immich-migration/master/process_and_upload.sh | sh
+wget -Nnv https://raw.githubusercontent.com/lukehmcc/simple-gphotos-immich-migration/master/process_and_upload.sh && bash process_and_upload.sh; rm -f process_and_upload.sh
 ```
 4. Simply entered the information asked and it should run it's course and upload by itself.
 
