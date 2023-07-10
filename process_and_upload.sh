@@ -1,9 +1,9 @@
 #!/bin/bash
 
 read -p "Enter API key: " KEY
-read -p "Enter server address (https://sld.tld/api)" SERVER
-read -p "Enter your base dir (where the takeout zips are)" BASE_DIR
-read -p "Enter the docker dir (make sure not to use a network mount path - can be the same as base dir)" DOCKER_DIR
+read -p "Enter server address (https://sld.tld/api): " SERVER
+read -p "Enter your base dir (where the takeout zips are): " BASE_DIR
+read -p "Enter the docker dir (make sure not to use a network mount path - can be the same as base dir): " DOCKER_DIR
 ALBUM_DIR="${BASE_DIR}/Takeout/Google Photos/AlbumsProcessed"
 PHOTO_DIR="${BASE_DIR}/Takeout/Google Photos/PhotosProcessed"
 
