@@ -13,6 +13,6 @@ This is a hackey (yet simple) way to import gphotos into immich.
 ```bash
 wget -Nnv https://raw.githubusercontent.com/lukehmcc/simple-gphotos-immich-migration/master/process_and_upload.sh && bash process_and_upload.sh; rm -f process_and_upload.sh
 ```
-4. Simply entered the information asked and it should run it's course and upload by itself.
+4. Respond to the prompts and you're on your merry way!
 
 Ideally you should do this through an app like `tmux` as this can take a long time and a disconnected session will mean you have to restart. Instructions for how to use `tmux` [here](https://www.linode.com/docs/guides/persistent-terminal-sessions-with-tmux/).
