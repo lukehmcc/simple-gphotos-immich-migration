@@ -28,9 +28,9 @@ docker run -it --rm -v "$PHOTO_DIR:/import" ghcr.io/immich-app/immich-cli:latest
 
 # Upload albums
 cd "$ALBUM_DIR"
-for album in "$ALBUM_DIR"/*; do
+for album in *; do
   if [ -d "$album" ]; then
     echo "Uploading album: $album"
-    docker run -it --rm -v "$album:/import" ghcr.io/immich-app/immich-cli:latest upload -y -k "$KEY" -s "$SERVER" -t 16 -al
+    docker run -it --rm -v "$(pwd)/$album:/import/$album" ghcr.io/immich-app/immich-cli:latest upload -y -k "$KEY" -s "$SERVER" -t 16 -al "$album"
   fi
 done
