@@ -5,6 +5,7 @@ This is a hackey (yet simple) way to import gphotos into immich.
 ### Prereq
 - docker & compose plugin
 - git
+- unzip
 
 ### Steps
 1. Download takeout files and put them in a directory
