@@ -21,7 +21,7 @@ cd "$DOCKER_DIR"
 git clone --recurse-submodules https://github.com/lukehmcc/exif-wrapper.git
 cd exif-wrapper
 echo "TAKEOUT_DIR=${BASE_DIR}/Takeout" > .env
-docker compose up
+docker compose up --build
 
 # Upload photos
 docker run -it --rm -v "$PHOTO_DIR:/import" ghcr.io/immich-app/immich-cli:latest upload -y -k "$KEY" -s "$SERVER" -t 16
