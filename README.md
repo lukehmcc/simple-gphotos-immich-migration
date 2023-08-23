@@ -1,3 +1,5 @@
+⚠️ This is a hackey bash script. I am working on fully integrating this functionality upstream [here](https://github.com/garzj/google-photos-migrate).
+
 # simple-gphotos-immich-migration
 This is a hackey (yet simple) way to import gphotos into immich.
 
